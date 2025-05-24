@@ -34,9 +34,9 @@ Se quiser rodar a análise no seu ambiente local, é só seguir os passos abaixo
 	2.	(Opcional) Crie um ambiente virtual:
 
 python -m venv venv
-# No Windows:
+## No Windows:
 .\venv\Scripts\activate
-# No macOS/Linux:
+## No macOS/Linux:
 source venv/bin/activate
 
 
