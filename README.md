@@ -1,73 +1,75 @@
-# Análise de Evasão de Clientes (Churn) - Telecom X
+📊 Análise de Evasão de Clientes (Churn) – Telecom X
 
-## Visão Geral do Projeto
+🧭 Visão Geral
 
-Este projeto tem como objetivo principal analisar os dados da Telecom X para identificar os fatores que contribuem para a evasão de clientes (Churn). A compreensão desses fatores é crucial para que a empresa possa desenvolver estratégias de retenção mais eficazes, minimizando a perda de receita e otimizando os custos de aquisição de novos clientes.
+Esse projeto nasceu como parte de um desafio de Data Science com um objetivo bem claro: entender por que os clientes da Telecom X estão deixando a empresa. Analisar o churn não é só uma questão de números — é sobre entender comportamentos, melhorar o serviço e fortalecer a relação com o cliente.
 
-O trabalho foi desenvolvido como parte de um desafio de Data Science e inclui etapas de extração, transformação e carregamento (ETL) dos dados, análise exploratória (EDA) e a elaboração de um relatório completo com conclusões e recomendações.
+Aqui, mergulhei nos dados para identificar os principais fatores que influenciam a evasão de clientes. A ideia é que essas informações sirvam como base para criar estratégias de retenção mais eficazes e inteligentes, reduzindo perdas e otimizando investimentos em aquisição.
 
-## Estrutura do Projeto
+🗂 Estrutura do Projeto
 
-O projeto é composto por um único Jupyter Notebook:
+O projeto está todo concentrado em um único Jupyter Notebook:
+	•	TelecomX_Churn_Analysis_Report.ipynb: nele você encontra desde o carregamento e tratamento dos dados até a análise completa e um relatório final com insights e recomendações práticas.
 
--   `TelecomX_Churn_Analysis_Report.ipynb`: Contém todo o código-fonte para carregamento, limpeza, tratamento e análise dos dados, além de um relatório detalhado com os resultados e insights.
+🛠 Tecnologias Utilizadas
 
-## Bibliotecas Utilizadas
+Para essa análise, utilizei as seguintes bibliotecas Python:
+	•	pandas – manipulação e análise de dados.
+	•	numpy – suporte a operações numéricas e vetoriais.
+	•	requests – carregamento de dados via HTTP.
+	•	seaborn e matplotlib.pyplot – visualizações para tornar os insights mais claros e acessíveis.
 
-As seguintes bibliotecas Python foram utilizadas neste projeto:
+▶️ Como Executar
 
--   `pandas`: Para manipulação e análise de dados.
--   `numpy`: Para operações numéricas de alto desempenho.
--   `requests`: Para fazer requisições HTTP e carregar dados de uma URL externa.
--   `seaborn`: Para visualização estatística de dados.
--   `matplotlib.pyplot`: Para personalização e exibição de gráficos.
+Se quiser rodar a análise no seu ambiente local, é só seguir os passos abaixo:
+	1.	Clone o repositório:
 
-## Como Executar o Projeto
+git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+cd SEU_REPOSITORIO
 
-Para replicar a análise, siga os passos abaixo:
+(Lembre-se de trocar SEU_USUARIO e SEU_REPOSITORIO pelo seu usuário e repositório do GitHub.)
 
-1.  **Clone o Repositório:**
-    ```bash
-    git clone [https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git](https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git)
-    cd SEU_REPOSITORIO
-    ```
-    *(Substitua `SEU_USUARIO` e `SEU_REPOSITORIO` pelo seu nome de usuário e nome do repositório no GitHub)*
+	2.	(Opcional) Crie um ambiente virtual:
 
-2.  **Crie e Ative um Ambiente Virtual (Recomendado):**
-    ```bash
-    python -m venv venv
-    # No Windows:
-    .\venv\Scripts\activate
-    # No macOS/Linux:
-    source venv/bin/activate
-    ```
+python -m venv venv
+# No Windows:
+.\venv\Scripts\activate
+# No macOS/Linux:
+source venv/bin/activate
 
-3.  **Instale as Dependências:**
-    ```bash
-    pip install pandas numpy requests seaborn matplotlib
-    ```
 
-4.  **Execute o Jupyter Notebook:**
-    ```bash
-    jupyter notebook TelecomX_Churn_Analysis_Report.ipynb
-    ```
-    Isso abrirá o Jupyter Notebook no seu navegador padrão. Você poderá executar todas as células para ver o fluxo da análise e o relatório final.
+	3.	Instale as dependências:
 
-## Conclusões e Recomendações Principais
+pip install pandas numpy requests seaborn matplotlib
 
-As principais descobertas do relatório indicam que:
 
-* **Clientes com menor tempo de contrato (`tenure`)** são mais propensos a evadir.
-* **Contratos mensais** estão fortemente associados a uma alta taxa de churn.
-* O **método de pagamento "Electronic check"** também mostra uma correlação com maior churn.
-* **Adesão a serviços adicionais** (segurança online, backup, suporte técnico) parece aumentar a retenção.
-* **Clientes de Fibra Óptica** apresentaram uma taxa de churn surpreendentemente alta, indicando possíveis problemas de qualidade de serviço ou expectativa.
+	4.	Abra o notebook no Jupyter:
 
-Com base nisso, são feitas recomendações como: programas de boas-vindas para novos clientes, incentivos para contratos mais longos, investigação de problemas com o método de pagamento "Electronic check", promoção de serviços adicionais e reavaliação da qualidade do serviço de fibra óptica.
+jupyter notebook TelecomX_Churn_Analysis_Report.ipynb
 
-Para mais detalhes sobre as análises e recomendações, consulte o relatório completo dentro do notebook.
+Isso abrirá o notebook no navegador. A partir daí, é só executar as células e acompanhar todo o raciocínio da análise.
 
----
+📌 Principais Conclusões
 
-**Autor:** Dragos Calin
-**Data:** 24Maio de 2025
+Alguns pontos se destacaram durante o estudo:
+	•	Clientes com pouco tempo de contrato (tenure curto) tendem a evadir com mais frequência.
+	•	Planos com cobrança mensal estão diretamente ligados a altas taxas de churn.
+	•	O método de pagamento “Electronic check” tem forte correlação com evasão.
+	•	A adesão a serviços adicionais (como backup e suporte técnico) parece ajudar na retenção.
+	•	Curiosamente, clientes com Fibra Óptica apresentaram maior taxa de churn — o que pode indicar uma falha na entrega ou expectativas não atendidas.
+
+💡 Recomendações
+
+Com base nas análises, algumas sugestões surgem de forma natural:
+	•	Criar programas de boas-vindas focados nos clientes novos (especialmente no início do ciclo).
+	•	Incentivar contratos de longo prazo.
+	•	Investigar o motivo da insatisfação com o método de pagamento “Electronic check”.
+	•	Promover serviços adicionais como parte de pacotes mais completos.
+	•	Reavaliar a qualidade do serviço de fibra óptica, que pode estar impactando negativamente a experiência do cliente.
+
+Para mais detalhes e visualizações, você pode conferir tudo dentro do notebook.
+
+⸻
+
+Autor: Dragos Calin
+Data: 24 de Maio de 2025
