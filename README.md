@@ -21,36 +21,6 @@ Para essa análise, utilizei as seguintes bibliotecas Python:
 - `requests` – carregamento de dados via HTTP.  
 - `seaborn` e `matplotlib.pyplot` – visualizações para tornar os insights mais claros e acessíveis.
 
-## ▶️ Como Executar
-
-Se quiser rodar a análise no seu ambiente local, é só seguir os passos abaixo:
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
-   cd SEU_REPOSITORIO
-
-(Lembre-se de trocar SEU_USUARIO e SEU_REPOSITORIO pelo seu usuário e repositório do GitHub.)
-	2.	(Opcional) Crie um ambiente virtual:
-
-python -m venv venv
-## No Windows:
-.\venv\Scripts\activate
-## No macOS/Linux:
-source venv/bin/activate
-
-
-	3.	Instale as dependências:
-
-pip install pandas numpy requests seaborn matplotlib
-
-
-	4.	Abra o notebook no Jupyter:
-
-jupyter notebook TelecomX_Churn_Analysis_Report.ipynb
-
-Isso abrirá o notebook no navegador. A partir daí, é só executar as células e acompanhar todo o raciocínio da análise.
-
 📌 Principais Conclusões
 
 Alguns pontos se destacaram durante o estudo:
