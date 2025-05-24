@@ -10,7 +10,7 @@ Aqui, mergulhei nos dados para identificar os principais fatores que influenciam
 
 O projeto está todo concentrado em um único Jupyter Notebook:
 
-- `TelecomX_Churn_Analysis_Report.ipynb`: nele você encontra desde o carregamento e tratamento dos dados até a análise completa e um relatório final com insights e recomendações práticas.
+- `TelecomX_Evasao_Clientes.ipynb`: nele você encontra desde o carregamento e tratamento dos dados até a análise completa e um relatório final com insights e recomendações práticas.
 
 ## 🛠 Tecnologias Utilizadas
 
